@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, userscalable=no">
+<title>不时用cpp小声说真心话的邻桌Alan同学</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="backgroundfilter" style="background-color: #111111;"></div>
+    <audio id="audio1">
+        <source src="./audio/79.mp3" type="audio/mp3">
+    </audio>
+
+    <header>
+        <!--设置导航栏logo -->  
+        <img src="./images/logo.png" style="height: 2.5vw; border-radius: 0.5vw;" alt="">
+        <ul >
+            <li class="html_header"><a class="html_header_a_main" id="main_page">HOME</a></li>
+            <li class="html_header"><a class="html_header_a"  id="IK_page">INTER-KNOT</a></li>
+            <li class="html_header"><a class="html_header_a" id="PJ_page" href="#">PROJECT</a></li>
+            <li class="html_header"><a class="html_header_a"  id="P_page" href="#">COLLECTIONS</a></li>
+            <li class="html_header"><a class="html_header_a"  id="E_page" href="#">EPITAPH</a></li>
+            <li class="html_header"><a class="html_header_a" style="margin: 0vw 0vw; padding: 0.2vw 0.65vw; font-size: 1.2vw;" id="musicbutton" onclick="playAudio()" href="#">♫</a></li>
+        </ul>
+
+    </header>
+
+
+<Page_Main id="MP">
+    <div id="backgroundfilter_Main" style="background-color: #efefef;"></div>
+<div id="background_box">
+    <img id="Headpicture" src="./Headpicture.png" alt="">  
+    <img  src='./images/zzzz.png' id="background_zzz" alt="">
+    <img  src="./images/alanclub2.png" id="background_alanclub" alt="">
+    <img  src="./images/fill-black-short.9c5f6aa.png"  id="background_short_S" alt="">
+    <img  src="./images/fill-bar.3e3b1a7.png"  id="background_movieband_1" alt="">
+    <img  src="./images/fill-black-right.c6c1db1.png"  id="background_movieblock_1" alt="">
+    <img src="./images/miku_green_block.png"id="background_greenblock"  alt="">
+    <img src="./images/miku_green_block_middle.png" id="background_greenblock_middle" alt="">
+    
+    <img  src="./images/fill-black-short.9c5f6aa.png"  id="background_short_S" style="transform: translate(0, 100vw); " alt="">
+    <img  src="./images/fill-bar.3e3b1a7.png"  id="background_movieband_1" style="transform: translate(0, 100vw); "  alt="">
+    <img  src="./images/fill-black-right.c6c1db1.png"  id="background_movieblock_1"style="transform: translate(0,100vw); "  alt="">
+    <img src="./images/miku_green_block.png"id="background_greenblock" style="transform: translate(0,100vw); "   alt="">
+    <img src="./images/miku_photo_block.png" id="miku_photo_block" alt="">
+    <img src="./images/More_block.png" id="More_block" alt="">
+</div>
+
+<div id="Banner_box" style="overflow: hidden; ">
+    <h3 class= "Word_main" id="Word_main_CNname" style="letter-spacing: 0.1vw;" > 绳网</h3>
+    <h3 class= "Word_main" id="Word_main_ENname" style="transform: translate(0.1vw,5vw); font-size: 1.2vw;	  font-family:ZZZ; "> INTER-KNOT</h3>
+    <h3 class= "Word_main" id="Word_main_Num" style="transform: translate(0vw,0vw); font-size: 7vw;	font-family:ZZZ; "> 02</h3>
+    <div id="enter_box">    <img src="./images/miku_green_block_enter.png" class= "Inter-knot-box" id="Inter-knot-box" alt="">
+    </div>
+
+    
+    <h3 class= "Word_MY" id="Word_MY_CNname" style="letter-spacing: 0.1vw;" > 个人项目</h3>
+    <h3 class= "Word_MY" id="Word_MY_ENname" style="transform: translate(0.1vw,5vw); font-size: 1.2vw;	  font-family:ZZZ; "> PROJECTS</h3>
+    <h3 class= "Word_MY" id="Word_MY_Num" style="transform: translate(0vw,0vw); font-size: 7vw;	font-family:ZZZ; "> 03</h3>
+    <div class="PROJECT_BOX" id="PROJECT_BOX">
+        <img src="./miku_look.png" style="position:relative;  height: 100%; width: 100%; 	border-radius: 2vw;" controls alt="">
+    </div>
+
+    <h3 class= "Word_CL" id="Word_CL_CNname" style="letter-spacing: 0.1vw;" > 摄影集</h3>
+    <h3 class= "Word_CL" id="Word_CL_ENname" style="transform: translate(0.1vw,5vw); font-size: 1.2vw;	  font-family:ZZZ; "> COLLECTIONS</h3>
+    <h3 class= "Word_CL" id="Word_CL_Num" style="transform: translate(0vw,0vw); font-size: 7vw;	font-family:ZZZ; "> 04</h3>
+    <div id="Photo_box">    
+        <img src="./images/Photo/red1.jpg" id="Photo" alt="">
+    </div>
+
+
+    <h3 class= "Word_SHOW" id="Word_SHOW_CNname" style="letter-spacing: 0.1vw;" > 墓志铭</h3>
+    <h3 class= "Word_SHOW" id="Word_SHOW_ENname" style="transform: translate(0.1vw,5vw); font-size: 1.2vw;	  font-family:ZZZ; "> EPITAPH</h3>
+    <h3 class= "Word_SHOW" id="Word_SHOW_Num" style="transform: translate(0vw,0vw); font-size: 7vw;	font-family:ZZZ; "> 05</h3>
+
+    <div class="SHOW_VIDEO_BOX" id="SHOW_VIDEO_BOX" >    
+    <video style="position:relative; width: 100%; 	border-radius: 2vw;" controls>
+    <source src="./video/CS_AK_4kill.mp4"  type="video/mp4">
+    </video>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<footer>
+    <div id="footer_black"></div>
+    <div id="footer_word">   
+            <a href="./[th07] 东方妖妖梦 (日文版).rar" style="color: #787878;;" >alanclub.icu © 2024 |</a>
+        <a href="https://beian.miit.gov.cn/" style="color: #787878;;"> 冀ICP备2024079029号 </a>
+    </div>
+
+</footer>
+</Page_Main>
+ 
+<Page_Inter_Knot id="IK">
+<div style="overflow: hidden; width: 100%; height: 100vh; top:0vw; left: 0vw; position: absolute;">
+    <img style="position: relative; height: 56vw;top:-5vw; left: -19vw;" src="./images/inner-top.224793e.png" alt="">
+    <img style="position: relative; height: 28vw; top:-24vw; left: -76vw;" src="./images/miku_green_block.png" alt="">
+</div>
+
+<div style="overflow: hidden; width: 100%; height:100vh; top:0vw; left: 0vw; position:absolute;">
+    <h3 class= "IK_Title"  style="letter-spacing: 0.01vw;" > 绳网</h3>
+    <h3 class= "IK_Title"  style="transform: translate(0.1vw,3.7vw); font-size: 1vw;font-family:ZZZ; "> INTER-KNOT</h3>
+    <h3 class= "IK_Title"  style="transform: translate(0vw,0.9vw); font-size: 4.5vw;font-family:ZZZ; "> 02</h3>
+</div>
+
+<div id="backgroundfilter"></div>
+<div id="IK_menu"> 
+    <h2 class="IK_menu_word">归档</h2>
+    <h2 class="IK_menu_word">动态</h2>
+    <h2 class="IK_menu_word">推送</h2>
+</div>
+<div class="WaterFall">
+    <div class="item">
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697381188218.jpg">                   <div id="Water_2"><IK_title>（此处为标题） </IK_title>  </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/0D67FF51B58CB4D82263165524CC930C.jpg"><div id="Water_2"><IK_title>（此处为标题） </IK_title></div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697381215752.jpg">                   <div id="Water_2"><IK_title>（此处为标题） </IK_title></div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697381226977.jpg">                   <div id="Water_2"><IK_title>（此处为标题） </IK_title></div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697381239271.jpg">                   <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697381292894.jpg">                   <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697462415350.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697485594548.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1698311573715.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697485596661.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697485599510.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697485601844.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697614514417.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935607018.jpg">                   <div id="Water_2"> </div></div>
+        <div>        <img class="Water" src="./miku_wish.png">                          <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>        
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935661706.png">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935677523.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>       
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935683382.png">          <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935707553.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935718870.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935737001.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935767175.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./miku_kawai.png">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935770729.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+        <div>        <img class="Water" src="./images/各种图/桌面背景/1697935780969.jpg">                  <div id="Water_2"><IK_title>（此处为标题） </IK_title> </div></div>
+
+        
+        <!-- 
+        <img class="Water" src="./images/各种图/桌面背景/1697935786972.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1697953605562.png">
+        <img class="Water" src="./miku_look.png">
+        <img class="Water" src="./images/各种图/桌面背景/1697975521106.png">
+        <img class="Water" src="./images/各种图/桌面背景/1697975537132.png">
+        <img class="Water" src="./images/各种图/桌面背景/1698123703508.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698129931483.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698297980782.png">
+        <img class="Water" src="./images/各种图/桌面背景/1698302560301.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698304269456.jpg">        
+        <img class="Water" src="./miku_v.png">
+        <img class="Water" src="./images/各种图/桌面背景/1698311531789.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698311556260.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698311573715.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698311583005.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698311594851.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698315847302.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698415389579.png">
+        <img class="Water" src="./images/各种图/桌面背景/1698424084412.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698424096719.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698424126077.png">
+        <img class="Water" src="./images/各种图/桌面背景/1698557036193.jpg">
+        <img class="Water" src="./images/各种图/桌面背景/1698595991276.jpg">
+                --> 
+    </div>
+</div>
+
+</Page_Inter_Knot>
+
+<Page_Project id="PJ">
+    <div id="backgroundfilter" style="background-color: #111111"></div>
+
+    <div style="overflow: hidden; width: 100%; height: 100vh; top:0vw; left: 0vw; position: absolute;">
+        <img style="position: relative; height: 56vw;top:-5vw; left: -9.5vw;" src="./images/inner-top.224793e.png" alt="">
+        <img style="position: relative; height: 28vw; top:-21vw; left: -76vw;" src="./images/miku_green_block.png" alt="">
+    </div>
+    
+    <div style="overflow: hidden; width: 100%; height:100vh; top:0vw; left: 0vw; position:absolute;">
+        <h3 class= "PJ_Title"  style="letter-spacing: 0.01vw;" > 个人项目</h3>
+        <h3 class= "PJ_Title"  style="transform: translate(0.1vw,3.7vw); font-size: 1vw;font-family:ZZZ; ">PROJECT</h3>
+        <h3 class= "PJ_Title"  style="transform: translate(0vw,0.9vw); font-size: 4.5vw;font-family:ZZZ; "> 03</h3>
+    </div>
+<div class="PJ_main_box" style="position: absolute; height: 150vw; right: 12.5%;top: 6vw; width: 75% ; display: grid; grid-template-columns: 20% 60% 20%; margin: auto; overflow: hidden;">
+
+    <div  id="my_information_box">
+        <div style=" position: absolute; top:0vw; height: 1vw; text-align: center;">
+            <img style="width: 100%; height: auto;" src="./images/logo.png" alt="">
+            <div><h3 style="font-size: 1.4vw; font-family: ZZZ; margin:  0vw  0.3vw; color: #efefef;">Alan</h3></div>
+            <div style="height: 6vw; align-content: center ;font-size: 0.9vw ;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #efefef;"  ><p style="font-style: italic; font-weight:bold; position: relative; top:-0.3vw">Man,what can I say!</p></div>
+        </div>
+
+        <div style="display: flex; align-content: flex-start; flex-wrap:wrap; height: 4.5vw; top:22.5vw ; width: 100%; padding: 0vw 0.3vw; position: absolute; ">
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Python</p>
+            </div>
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> javascript</p>
+            </div>
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> C/C++</p>
+            </div>
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family: ZZZ;"> 🎵</p>
+            </div>
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family: ZZZ;"> 兴趣使然的前端学习</p>
+            </div>
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family: ZZZ;"> 数据科学</p>
+            </div>
+
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family: ZZZ;"> 算法学习坐牢中</p>
+            </div>
+
+            <div  style="height: 1.3vw; margin:0.1vw 0.1vw; align-content: center; "> 
+                <p style="font-size: 0.7vw ;padding: 0.1vw 0.5vw; margin: auto; border-radius: 1vw; background-color: rgba(63, 63, 63, 0.781) ;color: #efefef;font-family: ZZZ;"> 非酋</p>
+            </div>
+
+        </div> 
+
+
+        <div class="ico_box">
+                <a href="https://space.bilibili.com/9165607?spm_id_from=333.1365.0.0"><img src="./ico/bilibili.ico" alt=""></a>
+                <a href="https://leetcode.cn/u/wei-lian-d/"><img src="./ico/leetcode.ico" alt=""></a>
+                <a href="https://steamcommunity.com/profiles/76561198853837546/"><img src="./ico/steam.ico" alt=""></a>
+                <a href="https://www.zhihu.com/people/zan-jun-24"><img src="./ico/zhihu.ico" alt=""></a>
+                <a href="https://github.com/AltriaZ0"> <img src="./ico/github.ico" alt=""></a>
+        </div>
+
+
+    </div>
+
+    <div id="head_page_box">
+        <div class="head_page_little_box" style="padding:0vw 0vw;margin-bottom: 0.8vw;height: 3vw;">
+            <div class="head_menu"><h2>C++</h2></div>
+            <div class="head_menu"><h2>Python</h2></div>
+            <div class="head_menu"><h2>Html+Css+Js</h2></div>
+            <div class="head_menu"><h2>数据科学</h2></div>
+            <div class="head_menu"><h2>Else</h2></div>
+        </div>
+        <!--文章块 -->  
+        <div class="head_page_little_box" style="flex-wrap: wrap;">
+            <div style=" width: 90%; height: 1.5vw; margin:auto; padding: 0 0; text-align: left;"></div>
+        <!--文章标题 -->  
+            <div style=" width: 100%; height: auto; margin: 0 0; padding: 0 0; text-align: center;">
+                <h1  style="margin:0.5vw 0.1vw;color: #efefef; font-size: 1.5vw; font-weight: bolder; font-family: BOLD;">专用于星际争霸2Replay文件分析的小程序：SC2RepAnalysis 使用说明&更新文档</h1>
+            </div>
+        <!--文章信息 -->  
+            <div style=" position: relative; width: 100%; height: auto; margin: 0 0; padding: 0 0; text-align: center;display: flex; justify-content: center;">
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">2024-1-1</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">1001次浏览</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">字数: 9999字</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">预计阅读时长: 10min</p>
+            </div>
+        <!--分隔符 -->  
+            <div style=" width: 90%; height: 2vw; margin:auto; padding: 0 0; text-align: left;"></div>
+        <!--文章正文部分 -->  
+            <div class="main_Word" style=" width: 90%; max-height: 30vw; overflow: hidden; height: auto; margin:auto; padding: 0 0; text-align: left;">
+                <h1  style="transition: all 0.5s ease; margin:0.5vw 0.1vw; color: #efefef; font-size: 0.9vw; font-weight: bolder; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    程序介绍：<br>
+
+                    SC2RepAnalysis是一款免费的能够应用于星际争霸2战术学习、游戏后复盘、数据统计等方面的小程序。
+                    
+                    本程序由Python编写，并基于python的sc2reader库的各个端口对星际争霸2replay文件进行解析，将replay中发生的科技升级、建筑建造、单位建造等事件进行统计并汇总成为表格，使之容易进行学习分析。
+                    
+                    在书写使用说明的今天，SC2RepAnalysis已经更新到1.2版本，进一步支持了批量解析、农民数量统计、存活单位统计等功能。
+                    
+                    程序制作粗糙，还在不断更新优化，还请见谅~
+                    
+                    联系作者：知乎ID：赞君，bilibili：小赞小赞，sc2韩服id：AIlian#11514。
+                    如果您有发现bug，或者有任何意见与建议，欢迎在各平台私信告诉我，非常感谢！
+                    
+                    在此再宣传一下自己的sc2萌新交流练习Q群924040644，欢迎萌新和大佬加入~
+                    <br>
+                    数据使用：
+                    <br>如果您使用本程序生成的数据进行了视频、文字等创作，还请注明数据来源于本程序或贴上本网页链接~
+                    下载地址
+
+                    百度云链接：https://pan.baidu.com/s/1SEDuEWwsiinM_oDOYLZQdA?pwd=6b5v , 提取码：6b5v
+                    使用说明
+                    
+                    1.打开本程序之后，根据提示输入0或1，可以选择单独解析和批量解析，之后将会跳出选择文件（文件夹）的界面，单独解析请选择sc2replay文件，批量解析请选择保存有sc2replay文件的文件夹。之后就可以等待程序运行啦！
+                    程序运行过程中的界面.
+                    <br>
+                    <img src="https://pica.zhimg.com/80/v2-ecb4bfefb7e8002405e5a1be8584d79b_720w.webp?source=d16d100b" alt="">
+                    <br>
+                    2.当前版本还没有支持“断点续传”，所以在运行过程中请勿关闭程序~如果程序中途中断，再开始时会从头进行解析。
+                    
+                    3.解析成功后的文件会在选择的文件（文件夹）的同目录中创建文件夹"SC2RepAnalysis"，将解析生成的txt与excel文件保存于此。
+                    解析时，会在同目录下创建解析文件夹
+                    
+                    
+                    4.在解析之后，在SC2RepAnalysis文件夹中会按对局生成每个对局各个选手的建造列表，分别以excel和txt格式呈现。
+                    当前版本中，展示的信息分别有时间轴、个别时间的人口数、单位建造列表、建筑建造列表和科技升级列表，以及以上事件发生时正在存活的单位。
+                    建造列表Excel
+                    建造列表txt
+                    
+                    5.在批量解析时，会生成一个所有对局汇总excel，对解析的所有对局的生产队列进行汇总，方便进行战术分析等工作~
+                    批量解析后，会在解析文件夹中生成一个汇总excel
+                    
+                    注意，在批量解析生成的汇总excel中，为了能够使近似开局的建筑顺序统一，在三族的建筑队列中对水晶、补给站、菌毯、虫族防空管子的建造、人族建筑飞行和科技挂件的脱离进行了隐藏。
+                    汇总excel进行筛选排序后的结果
+                    <br>
+                    更新日志：<br>
+                    
+                    #1.0.1更新内容：<br>
+                    #引入了pandas库 <br>
+                    #支持导出为excel格式 <br>
+                    #修复了重新归类变异时，升级列表的长度不足会报错的问题# <br>
+                    
+                    #1.1更新内容：
+                    #增加了对泰伦、普陀寺的支持
+                    #支持了个别时间点的人口与农民数量#
+                    
+                    #1.1.1更新内容：
+                    #增加了关键时间点的存活单位和农民数量
+                    
+                    #1.1.2更新内容：
+                    #增加了执行进度条
+                    #支持显示关键时间点的存活单位
+                    #txt文件和excel文件会生成在SC2RepAnalysis文件夹中
+                    #修复了之前版本的bug
+                    #优化了输出txt和excel内容的格式
+                    
+                    #1.2.0更新内容：
+                    #修复了之前版本的bug
+                    #1.当没有单位变异发生时报错的bug
+                    #2.Unitposition出现异常情况时报错的的bug
+                    #3.变异单位重分类时单位出生的列表可能不够长而报错的bug
+                    #目前已经支持批量分析，并支持导出批量rep的流程
+                    #由于bug2,修改了sc2reader的一些配置，有可能未来会出现未知的bug
+                    #优化了代码架构，使代码可读性增加
+                    #优化了GUI，使用更加方便
+                    #优化了excel的表现：减去了现在升级科技的*n效果
+                    <br>
+                    <img src="https://pic1.zhimg.com/80/v2-53e5276e1218e021b768f876d8bfb6bf_720w.webp?source=d16d100b" alt="">
+                    <br>
+                    未来更新内容
+                    
+                    #可视化、更容易交互的GUI界面
+                    
+                    #支持按选手名统计数据
+                    
+                    #支持“断点续传”</h1>
+            </div>
+            <div style=" position: relative; width: 100%; height: auto; margin: 0vw 0vw; padding: 0vw 0vw; text-align: center;display: flex; justify-content: center;">
+               <p class="More_word" style="background-color: #5858585b; border-radius: 1vw; padding:0.2vw 1vw;color: #efefef; font-size: 1.2vw; font-weight: bolder; font-family: BOLD;">展开全文</p>
+            </div>
+        <!--文章标签 -->  
+            <div style=" border-top: solid 0.1vw rgba(223, 223, 223, 0.397);position: relative; width: 90%; height: auto; margin: auto; padding: 0vw 0vw; text-align: center;display: flex; justify-content: left;">
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">Python</p>
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">星际争霸2</p>
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">数据科学</p>
+             </div>
+        </div>
+        <div class="head_page_little_box" style="flex-wrap: wrap;">
+            <div style=" width: 90%; height: 1.5vw; margin:auto; padding: 0 0; text-align: left;"></div>
+        <!--文章标题 -->  
+            <div style=" width: 100%;margin: 0 0; padding: 0 0; text-align: center;">
+                <h1  style="margin:0.5vw 0.1vw;color: #efefef; font-size: 1.5vw; font-weight: bolder; font-family: BOLD;">运动生理学笔记1 导论&肌肉的结构和功能</h1>
+            </div>
+        <!--文章信息 -->  
+            <div style=" position: relative; width: 100%; height: auto; margin: 0 0; padding: 0 0; text-align: center;display: flex; justify-content: center;">
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">2024-1-1</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">1001次浏览</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">字数: 9999字</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">预计阅读时长: 10min</p>
+            </div>
+        <!--分隔符 -->  
+            <div style=" width: 90%; height: 2vw; margin:auto; padding: 0 0; text-align: left;"></div>
+        <!--文章正文部分 -->  
+            <div class="main_Word" style=" width: 90%; max-height: 30vw; overflow: hidden; height: auto; margin:auto; padding: 0 0; text-align: left;">
+                <h1  style="margin:0.5vw 0.1vw;color: #efefef; font-size: 0.9vw; font-weight: bolder; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                0 导论： 短期和长期运动对身体的影响 <br>
+
+
+                不同的运动模式会对身体产生不同的影响：<br>
+                （1）独立单次的运动形式，称为短期运动，身体会对应产生“急性反应”，我们认为这是身体对单次运动项目所产生的立即直接反应。<br>
+                （2）个体对长期、反复运动造成的压力，或对运动的慢性适应产生的反应：慢性反应，也称为训练效果<br>
+
+                当个体经历数周的规律运动，身体会产生适应现象，简而言之，就是实施阻力训练
+                时，肌肉会变得更强壮，而当进行有氧耐力训练
+
+                时，心肺功能会运作的更有效率，耐力也会增加。
+
+                1 肌肉的结构和功能 <br>
+                1.1 肌肉的分类：平滑肌、心肌和骨骼肌<br>
+
+                平滑肌受意识的支配（称为非随意肌）分布在血管壁和多数内脏器官的管壁。
+                骨骼肌可以受意识的支配（随意肌），由于其附着在骨骼上，并可引起骨骼的运动，故得名。人体全身共有600多块骨骼肌。人体的运动就是由骨骼肌的收缩和舒张实现的
+                心肌是非随意肌，但某些特性与骨骼肌相似，仅在心脏可见。
+                骨骼肌（a），心肌（b），和平滑肌（c）的光镜结构<br>
+                1.2 骨骼肌与运动：I型肌纤维和II型肌纤维<br>
+
+                肌纤维的类型：I型（慢缩型）和II型（快缩型）
+                I型肌纤维只有一种，II型肌纤维还可以分为许多亚型，主要由IIa和IIx两种。
+                通常，大多数肌纤维含有50%的I型肌纤维和25%的IIa型肌纤维，余下的25%大部分都是IIx（还有一种IIc，仅占1%-3%）<br>
+                不同分类系统下对肌纤维类型的分类以及肌纤维类型的特性<br>
+
+
+                II型肌纤维与I型肌纤维相比，虽然收缩力度相同，但是有着较快的收缩速度，所以其产生的功率是I型的3-5倍
+                同时，由于II型运动神经元的胞体较大，在刺激纤维时，也能够引起相对更多的肌纤维收缩，II型肌纤维达到最大收缩力的速度快于I型肌纤维，且产生的力量也较大
+                <br>
+                肌纤维类型与运动：<br>
+                通常，I型肌纤维具有很高的有氧耐力，所以，低强度耐力运动（如马拉松），或日常运动（如走步），I型肌纤维最常被募集
+                II型肌纤维与I型相比，有氧耐力相对较弱，更适合在无氧的状态下工作。
+                同时，IIa型运动单位
+                相比I型能够产生更大的力量，但是又因为其耐力较弱，所以更适合低距离、高强度的运动（如1600米跑或400米游泳）。
+                IIx型肌纤维
+
+                不易被神经系统激活，很少参与日常的低强度活动，但在100米跑和50米游泳等高强度运动中却发挥重要作用。
+
+                人的肌纤维的类型是一出生就已经决定了，虽然耐力训练、力量训练和肌肉制动
+                均会引起肌纤维类型的转变，但训练引起肌纤维发生转变的比例不足10%，耐力训练和抗阻训练
+
+                可引起IIx型肌纤维减少，IIa型肌纤维增加。
+
+                针对不同运动的需要，骨骼肌会募集不同种类的肌纤维：在运动强度增加时，募集的肌纤维将会增加，且按照I-IIa-IIx顺序募集。
+                <br>
+                肌纤维类型和运动成绩：<br>
+                研究表明，优秀的长跑运动员腓肠肌
+
+                均含有超过90%的I型肌纤维；相反，需要速度和力量的短跑运动员，非常急主要由II型肌纤维组成。
+                不同性别运动员之特定肌肉中I型和II型肌纤维的比例及横断面积
+                1.3 肌肉的功能<br>
+
+                肌肉收缩的类型：<br>
+                向心收缩<br>
+                ：肌肉收缩时长度缩短
+                静力收缩：肌肉收缩产生了力，但关节保持不动，肌肉长度不变，如屈肘拿物体保持不动
+                离心收缩<br>
+
+                ：肌肉被拉长的过程中产生力量，例如手持重物缓慢伸肘关节时，肱二头肌（上臂前侧的肌肉）就是离心收缩
+
+                力的产生：<br>
+                肌力的大小，取决于激活的单位类型和数量、每个运动单位的刺激频率、肌肉体积的大小、肌纤维和肌节的长度和肌纤维收缩的速度。
+                <br>
+                肌力与运动单位和肌肉体积：<br>
+
+                激活的运动单位越多，产生的力越大。<br>
+                II型运动单位
+
+                产生的力大于I型运动单位产生的力，因为II型运动单位比I型运动单位含有更多的肌纤维。<br>
+                同样，体积大的肌肉含有的肌纤维多，产生的力就大于体积小的肌肉。<br>
+
+                肌力与收缩速度
+
+                ：<br>
+
+                肌肉向心收缩时，收缩速度越慢，产生的肌力越大。<br>
+                而离心收缩相反，快速收缩会产生更大的肌力<br>
+                </h1>
+            </div>
+            <div style=" position: relative; width: 100%; height: auto; margin: 0vw 0vw; padding: 0vw 0vw; text-align: center;display: flex; justify-content: center;">
+               <p class="More_word" style="background-color: #5858585b; border-radius: 1vw; padding:0.2vw 1vw;color: #efefef; font-size: 1.2vw; font-weight: bolder; font-family: BOLD;">展开全文</p>
+            </div>
+        <!--文章标签 -->  
+            <div style=" border-top: solid 0.1vw rgba(223, 223, 223, 0.397);position: relative; width: 90%; height: auto; margin: auto; padding: 0vw 0vw; text-align: center;display: flex; justify-content: left;">
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">运动生理学</p>
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">Else</p>
+             </div>
+        </div>
+        <div class="head_page_little_box" style="flex-wrap: wrap;">
+            <div style=" width: 90%; height: 1.5vw; margin:auto; padding: 0 0; text-align: left;"></div>
+        <!--文章标题 -->  
+            <div style=" width: 100%; height: auto; margin: 0 0; padding: 0 0; text-align: center;">
+                <h1  style="margin:0.5vw 0.1vw;color: #efefef; font-size: 1.5vw; font-weight: bolder; font-family: BOLD;">专用于星际争霸2Replay文件分析的小程序：SC2RepAnalysis 使用说明&更新文档</h1>
+            </div>
+        <!--文章信息 -->  
+            <div style=" position: relative; width: 100%; height: auto; margin: 0 0; padding: 0 0; text-align: center;display: flex; justify-content: center;">
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">2024-1-1</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">1001次浏览</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">字数: 9999字</p>
+                <p  style="margin:0vw 1vw;color: #efefef; font-size: 0.7vw; font-weight: bolder; font-family: BOLD;">预计阅读时长: 10min</p>
+            </div>
+        <!--分隔符 -->  
+            <div style=" width: 90%; height: 2vw; margin:auto; padding: 0 0; text-align: left;"></div>
+        <!--文章正文部分 -->  
+            <div class="main_Word" style=" width: 90%; max-height: 30vw; overflow: hidden; height: auto; margin:auto; padding: 0 0; text-align: left;">
+                <h1  style="transition: all 0.5s ease; margin:0.5vw 0.1vw; color: #efefef; font-size: 0.9vw; font-weight: bolder; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    程序介绍：<br>
+
+                    SC2RepAnalysis是一款免费的能够应用于星际争霸2战术学习、游戏后复盘、数据统计等方面的小程序。
+                    
+                    本程序由Python编写，并基于python的sc2reader库的各个端口对星际争霸2replay文件进行解析，将replay中发生的科技升级、建筑建造、单位建造等事件进行统计并汇总成为表格，使之容易进行学习分析。
+                    
+                    在书写使用说明的今天，SC2RepAnalysis已经更新到1.2版本，进一步支持了批量解析、农民数量统计、存活单位统计等功能。
+                    
+                    程序制作粗糙，还在不断更新优化，还请见谅~
+                    
+                    联系作者：知乎ID：赞君，bilibili：小赞小赞，sc2韩服id：AIlian#11514。
+                    如果您有发现bug，或者有任何意见与建议，欢迎在各平台私信告诉我，非常感谢！
+                    
+                    在此再宣传一下自己的sc2萌新交流练习Q群924040644，欢迎萌新和大佬加入~
+                    <br>
+                    数据使用：
+                    <br>如果您使用本程序生成的数据进行了视频、文字等创作，还请注明数据来源于本程序或贴上本网页链接~
+                    下载地址
+
+                    百度云链接：https://pan.baidu.com/s/1SEDuEWwsiinM_oDOYLZQdA?pwd=6b5v , 提取码：6b5v
+                    使用说明
+                    
+                    1.打开本程序之后，根据提示输入0或1，可以选择单独解析和批量解析，之后将会跳出选择文件（文件夹）的界面，单独解析请选择sc2replay文件，批量解析请选择保存有sc2replay文件的文件夹。之后就可以等待程序运行啦！
+                    程序运行过程中的界面.
+                    <br>
+                    <img src="https://pica.zhimg.com/80/v2-ecb4bfefb7e8002405e5a1be8584d79b_720w.webp?source=d16d100b" alt="">
+                    <br>
+                    2.当前版本还没有支持“断点续传”，所以在运行过程中请勿关闭程序~如果程序中途中断，再开始时会从头进行解析。
+                    
+                    3.解析成功后的文件会在选择的文件（文件夹）的同目录中创建文件夹"SC2RepAnalysis"，将解析生成的txt与excel文件保存于此。
+                    解析时，会在同目录下创建解析文件夹
+                    
+                    
+                    4.在解析之后，在SC2RepAnalysis文件夹中会按对局生成每个对局各个选手的建造列表，分别以excel和txt格式呈现。
+                    当前版本中，展示的信息分别有时间轴、个别时间的人口数、单位建造列表、建筑建造列表和科技升级列表，以及以上事件发生时正在存活的单位。
+                    建造列表Excel
+                    建造列表txt
+                    
+                    5.在批量解析时，会生成一个所有对局汇总excel，对解析的所有对局的生产队列进行汇总，方便进行战术分析等工作~
+                    批量解析后，会在解析文件夹中生成一个汇总excel
+                    
+                    注意，在批量解析生成的汇总excel中，为了能够使近似开局的建筑顺序统一，在三族的建筑队列中对水晶、补给站、菌毯、虫族防空管子的建造、人族建筑飞行和科技挂件的脱离进行了隐藏。
+                    汇总excel进行筛选排序后的结果
+                    <br>
+                    更新日志：<br>
+                    
+                    #1.0.1更新内容：<br>
+                    #引入了pandas库 <br>
+                    #支持导出为excel格式 <br>
+                    #修复了重新归类变异时，升级列表的长度不足会报错的问题# <br>
+                    
+                    #1.1更新内容：
+                    #增加了对泰伦、普陀寺的支持
+                    #支持了个别时间点的人口与农民数量#
+                    
+                    #1.1.1更新内容：
+                    #增加了关键时间点的存活单位和农民数量
+                    
+                    #1.1.2更新内容：
+                    #增加了执行进度条
+                    #支持显示关键时间点的存活单位
+                    #txt文件和excel文件会生成在SC2RepAnalysis文件夹中
+                    #修复了之前版本的bug
+                    #优化了输出txt和excel内容的格式
+                    
+                    #1.2.0更新内容：
+                    #修复了之前版本的bug
+                    #1.当没有单位变异发生时报错的bug
+                    #2.Unitposition出现异常情况时报错的的bug
+                    #3.变异单位重分类时单位出生的列表可能不够长而报错的bug
+                    #目前已经支持批量分析，并支持导出批量rep的流程
+                    #由于bug2,修改了sc2reader的一些配置，有可能未来会出现未知的bug
+                    #优化了代码架构，使代码可读性增加
+                    #优化了GUI，使用更加方便
+                    #优化了excel的表现：减去了现在升级科技的*n效果
+                    <br>
+                    <img src="https://pic1.zhimg.com/80/v2-53e5276e1218e021b768f876d8bfb6bf_720w.webp?source=d16d100b" alt="">
+                    <br>
+                    未来更新内容
+                    
+                    #可视化、更容易交互的GUI界面
+                    
+                    #支持按选手名统计数据
+                    
+                    #支持“断点续传”
+                </h1>
+            </div>
+            <div style=" position: relative; width: 100%; height: auto; margin: 0vw 0vw; padding: 0vw 0vw; text-align: center;display: flex; justify-content: center;">
+               <p class="More_word" style="background-color: #5858585b; border-radius: 1vw; padding:0.2vw 1vw;color: #efefef; font-size: 1.2vw; font-weight: bolder; font-family: BOLD;">阅读全文</p>
+            </div>
+        <!--文章标签 -->  
+            <div style=" border-top: solid 0.1vw rgba(223, 223, 223, 0.397);position: relative; width: 90%; height: auto; margin: auto; padding: 0vw 0vw; text-align: center;display: flex; justify-content: left;">
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">Python</p>
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">星际争霸2</p>
+                <p style="background-color: #5858585b; border-radius: 1vw;margin-right:0.5vw;padding:0.2vw 1vw;color: #efefef; font-size: 0.8vw; font-weight: bolder; font-family: BOLD;">数据科学</p>
+             </div>
+        </div>
+    </div>
+
+    <div style="height: 34vw;" id="my_information_box">
+        <div style="left: 5%; width: 90%; left:2%; padding: 0.2vw 3%; margin-bottom: 1vw;display: flex; position: relative; top:0vw; height: 2vw; border-bottom:solid 0.1vw #787878; align-content: center; justify-content: center;">
+            <div style="margin: 0; padding: 0; height: auto; font-family: BOLD;  align-content: center ;font-size: 1.3vw ;color: #efefef;"  >传送门</div>
+        </div>
+        <div class="random_box"> </div>
+        <div class="random_box"> </div>
+        <div class="random_box"> </div>
+        <div class="random_box"> </div>
+        <div class="random_box"> </div>
+    </div>
+
+</div>
+</Page_Project>
+<Page_Photo id="PP">
+    <div id="backgroundfilter_Main" style="background-color: #efefef;"></div>
+    <div style="overflow: hidden; width: 100vw; height: 100vh; top:0vw; left: 0vw; position: absolute; padding: 0px; margin: 0px;">
+        <img style="position: relative; height: 56vw;top:-5vw; left: 0vw;" src="./images/inner-top.224793e.png" alt="">
+        <img style="position: relative; height: 28vw; top:-18vw; left: -76vw;" src="./images/miku_green_block.png" alt="">
+        <img style="position: relative; height: 28vw; top:-40vw; left:90VW;" src="./images/inner-foot-dark.png" alt="">
+    </div>
+
+    <div style="justify-content: center;align-content: center;overflow: hidden; width: 100vw; height:100vh; top:0vw; left: 0vw; position:absolute;">
+    <h3 class= "CL_Title"  style="letter-spacing: 0.01vw;" > 摄影集</h3>
+    <h3 class= "CL_Title"  style="transform: translate(0.1vw,2.6vw); font-size: 1vw;font-family:ZZZ; "> COLLECTIONS</h3>
+    <h3 class= "CL_Title"  style="transform: translate(0vw,3.6vw); font-size: 4.5vw;font-family:ZZZ; "> 04</h3>
+    </div>
+
+    <div style="justify-content: center;align-content: center;overflow: hidden; width: 100vw; height:100vh; top:0vw; left: 0vw; position:absolute;">
+        <div class="Photo_Box"> 
+            <ul class="photoes">
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+                <li class="photo"> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="photo_foot">    
+        <ul class="min">
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+        </ul>
+        <div class="photo_change_botton">
+            <img class="button_left" src="./images/but_wold.png" alt="">
+            <img class="button_left" style="z-index: -999;" src="./images/but_wold_witch.png" alt="">
+            <img class="button_right" src="./images/but_wold.png" alt="">
+            <img class="button_right" style="z-index: -999;" src="./images/but_wold_witch.png" alt="">
+        </div>
+    
+    </div>
+
+    <h1 class="Photo_collections" style="z-index: -99;font-style: italic ;color:#dfdfdf; font-size: 10vw;font-family: ZZZ; position: absolute; height: 30%;top:5vw; left: 36vw;">PHOTO <br> COLLECTIONS</h1>
+
+
+</Page_Photo>
+
+
+<Page_EPITAPH id="PE">
+    <div id="backgroundfilter_Main"  style="background-size: cover; filter: blur(0px); background-image:url('./images/background_line.png');"></div>
+    <div style="overflow: hidden; width: 100%; height: 100vh; top:0vw; left: 0vw; position: absolute;">
+        <img style="position: relative; height: 56vw;top:-5vw; left: -100vw;" src="./images/inner-top.224793e.png" alt="">
+        <img style="position: relative; height: 28vw; top:-15vw; left: -76vw;" src="./images/miku_green_block.png" alt="">
+    </div>
+    <div style="overflow: hidden; width: 100%; height:100vh; top:0vw; left: 0vw; position:absolute;">
+        <h3 class= "PE_Title"  style="letter-spacing: 0.01vw;" > 墓志铭</h3>
+        <h3 class= "PE_Title"  style="transform: translate(0.1vw,3.7vw); font-size: 1vw;font-family:ZZZ; ">EPITAPH</h3>
+        <h3 class= "PE_Title"  style="transform: translate(0vw,0.9vw); font-size: 4.5vw;font-family:ZZZ; ">05</h3>
+    </div>
+
+    <div style="display: flex; justify-content:center; align-items: center; align-content: center; overflow: hidden; width: 100%; height:100vh; top:0vw; left: 0vw; position:absolute;"> 
+        <img class="PE_TV" src="./images/PE_TV.jpg" alt="">
+        <div class="PE_TV_BOX" id="PE_TV_BOX" >    
+            <video style="position:absolute; width: 100%; height: 100%; border-radius: 1vw;" controls>
+            <source src="./video/CS_AK_4kill.mp4"  type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+</Page_EPITAPH>
+
+
+
+
+
+<script>
+    var backpage="MP"
+    document.getElementById("IK_page").addEventListener("click", Change_Interknot)
+    document.getElementById("main_page").addEventListener("click", Change_Interknot)
+    document.getElementById("PJ_page").addEventListener("click", Change_Interknot)
+    document.getElementById("P_page").addEventListener("click", Change_Interknot)
+    document.getElementById("E_page").addEventListener("click", Change_Interknot)
+
+    function Change_Interknot(){
+        x=this.id
+
+        if (x=="IK_page"){
+            document.getElementById(backpage).style.animation="Faded 0.5s"
+            document.getElementById(backpage).style.display="none";
+            var y=document.getElementById("IK");
+            y.style.animation="unFaded 0.5s";
+            y.style.display="inline";
+            backpage=y.id
+
+            z=document.getElementsByClassName("html_header_a_main")
+            z[0].className="html_header_a"
+            xx=document.getElementById(x).className
+            document.getElementById(x).className="html_header_a_main"
+            z=document.getElementsByClassName("html_header_a_main")
+        };
+
+        if (x=="main_page"){
+            document.getElementById(backpage).style.animation="Faded 0.5s"
+            document.getElementById(backpage).style.display="none";
+            var y=document.getElementById("MP");
+            y.style.animation="unFaded 0.5s";
+            y.style.display="inline";
+            backpage=y.id
+            z=document.getElementsByClassName("html_header_a_main")
+            z[0].className="html_header_a"
+            xx=document.getElementById(x).className
+            document.getElementById(x).className="html_header_a_main"
+            z=document.getElementsByClassName("html_header_a_main")
+        };
+
+        if (x=="PJ_page"){
+            document.getElementById(backpage).style.animation="Faded 0.5s"
+            document.getElementById(backpage).style.display="none";
+            var y=document.getElementById("PJ");
+            y.style.animation="unFaded 0.5s";
+            y.style.display="inline";
+            backpage=y.id
+            z=document.getElementsByClassName("html_header_a_main")
+            z[0].className="html_header_a"
+            xx=document.getElementById(x).className
+            document.getElementById(x).className="html_header_a_main"
+            z=document.getElementsByClassName("html_header_a_main")
+        };
+
+        if (x=="P_page"){
+            document.getElementById(backpage).style.animation="Faded 0.5s"
+            document.getElementById(backpage).style.display="none";
+            var y=document.getElementById("PP");
+            y.style.animation="unFaded 0.5s";
+            y.style.display="flex";
+            backpage=y.id
+            z=document.getElementsByClassName("html_header_a_main")
+            z[0].className="html_header_a"
+            xx=document.getElementById(x).className
+            document.getElementById(x).className="html_header_a_main"
+            z=document.getElementsByClassName("html_header_a_main")
+        };
+
+        if (x=="E_page"){
+            document.getElementById(backpage).style.animation="Faded 0.5s"
+            document.getElementById(backpage).style.display="none";
+            var y=document.getElementById("PE");
+            y.style.animation="unFaded 0.5s";
+            y.style.display="inline";
+            backpage=y.id
+            z=document.getElementsByClassName("html_header_a_main")
+            z[0].className="html_header_a"
+            xx=document.getElementById(x).className
+            document.getElementById(x).className="html_header_a_main"
+            z=document.getElementsByClassName("html_header_a_main")
+        };
+
+    }
+
+
+    function playAudio() {  
+    var x = document.getElementById("audio1");   
+
+    if ( document.getElementById("musicbutton").style.color != "black")
+       {document.getElementById("musicbutton").style.color = "black";
+       document.getElementById("musicbutton").style.backgroundColor = "white";
+       document.getElementById("musicbutton").classList.add('animate3');
+       x.play();
+
+    } 
+
+    else{
+        document.getElementById("musicbutton").style.color = "#787878";
+        document.getElementById("musicbutton").style.backgroundColor = "black";
+        document.getElementById("musicbutton").classList.remove('animate3');
+        x.pause();}     
+}   
+
+window.addEventListener('scroll', function() {
+  var element1 = document.getElementById('Word_main_CNname');
+  var element2 = document.getElementById('Word_main_ENname');
+  var element3 = document.getElementById('Word_main_Num');
+  var element4 = document.getElementById('Inter-knot-box');
+
+  var element5 = document.getElementById('Word_CL_CNname');
+  var element6 = document.getElementById('Word_CL_ENname');
+  var element7 = document.getElementById('Word_CL_Num');
+
+  var element8 = document.getElementById('Word_MY_CNname');
+  var element9 = document.getElementById('Word_MY_ENname');
+  var element10 = document.getElementById('Word_MY_Num');
+  var element14 = document.getElementById('PROJECT_BOX');
+
+  var element11 = document.getElementById('Word_SHOW_CNname');
+  var element12 = document.getElementById('Word_SHOW_ENname');
+  var element13 = document.getElementById('Word_SHOW_Num');
+  var element15 = document.getElementById('SHOW_VIDEO_BOX');
+
+
+
+//---------02动画
+
+if (window.scrollY > 600) { // 当页面向下滚动超过100px时 
+    setTimeout(function() {
+        element1.classList.add('animate'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element2.classList.add('animate'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element3.classList.add('animate'); // 为元素添加动画类);
+}, 200);
+setTimeout(function() {
+        element4.classList.add('animate_Inter_knot_box'); // 为元素添加动画类);
+}, 200);
+  } else {
+    setTimeout(function() {
+        element1.classList.remove('animate'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element2.classList.remove('animate'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element3.classList.remove('animate'); // 为元素添加动画类);
+}, 200);
+setTimeout(function() {
+      element4.classList.remove('animate_Inter_knot_box'); // 为元素添加动画类);
+}, 200);
+  }
+
+  
+  //---------04动画
+  if (window.scrollY > 2200) { // 当页面向下滚动超过100px时 
+    setTimeout(function() {
+        element5.classList.add('animate'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element6.classList.add('animate'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element7.classList.add('animate'); // 为元素添加动画类);
+}, 200);
+
+  } else {
+    setTimeout(function() {
+        element5.classList.remove('animate'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element6.classList.remove('animate'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element7.classList.remove('animate'); // 为元素添加动画类);
+}, 200);
+  }
+
+//---------03动画
+
+if (window.scrollY > 1300) { // 当页面向下滚动超过100px时 
+    setTimeout(function() {
+        element8.classList.add('animate2'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element9.classList.add('animate2'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element10.classList.add('animate2'); // 为元素添加动画类);
+}, 200);
+setTimeout(function() {
+        element14.classList.add('animate_showbox1'); // 为元素添加动画类);
+}, 200);
+
+
+  } else {
+    setTimeout(function() {
+        element8.classList.remove('animate2'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element9.classList.remove('animate2'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element10.classList.remove('animate2'); // 为元素添加动画类);
+}, 200);
+setTimeout(function() {
+        element14.classList.remove('animate_showbox1'); // 为元素添加动画类);
+}, 200);
+  }
+
+  //---------05动画
+
+if (window.scrollY > 3000) { // 当页面向下滚动超过100px时 
+    setTimeout(function() {
+        element11.classList.add('animate2'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element12.classList.add('animate2'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element13.classList.add('animate2'); // 为元素添加动画类);
+}, 200);
+setTimeout(function() {
+        element15.classList.add('animate_showbox2'); // 为元素添加动画类);
+}, 200);
+
+  } else {
+    setTimeout(function() {
+        element11.classList.remove('animate2'); // 为元素添加动画类);
+}, 0);
+setTimeout(function() {
+        element12.classList.remove('animate2'); // 为元素添加动画类);
+}, 100);
+setTimeout(function() {
+        element13.classList.remove('animate2'); // 为元素添加动画类);
+}, 200);
+setTimeout(function() {
+        element15.classList.remove('animate_showbox2'); // 为元素添加动画类);
+}, 200);
+  }
+
+  }
+);
+
+
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+var left=document.querySelector(".button_left");
+var right=document.querySelector(".button_right");
+var m=document.querySelectorAll(".m");
+var photoes=document.querySelector(".photoes");
+var photoesl=document.querySelectorAll(".photo");
+var index=0;
+var time;
+
+function photolength(){
+    photoes.style.width=(photoesl.length *46) + "vw"
+}
+photolength()
+
+function position(){
+    photoes.style.left =(index * -100) + "%"
+}
+
+function add(){
+    if (index >= m.length -1){
+        index=0
+    }
+    else{
+        index++
+    }
+}
+
+function desc(){
+    if (index<1){
+        index = m.length -1
+    }
+    else{
+        index--
+    }
+}
+/* 自动轮播
+function timer(){
+    time=setInterval(() => {
+        index++
+        desc()
+        add()
+        position()
+    },3000)
+}
+    */
+
+left.addEventListener("click",() => {
+    desc()
+    position()
+    clearInterval(time)
+    timer()
+})
+
+right.addEventListener("click",() => {
+    add()
+    position()
+    clearInterval(time)
+    timer()
+})
+
+
+
+for(let i=0; i<m.length; i++){
+    m[i].addEventListener("click",() =>{
+        index=i;
+        position();
+        clearInterval(time)
+        timer()
+    })
+
+}
+
+for(let i=0; i<m.length; i++){
+    photoesl[i].addEventListener("click",() =>{
+        index=i;
+        position();
+        clearInterval(time)
+        timer()
+    })
+
+}
+var more=document.querySelectorAll(".More_word");
+var word=document.querySelectorAll(".main_Word");
+var more_on=new Array()
+
+for (let i=0;i<more.length;i++){
+    more_on.push(0)
+    more[i].addEventListener("click",function(){
+        if(more_on[i]==0){
+            word[i].classList.add('animate_more_word')
+            word[i].style.maxHeight="200vw";
+            more_on[i]=1;
+            word[i].classList.remove('animate_close_word')
+            more[i].textContent="收起全文"
+
+            ch=window.getComputedStyle(word[i]).height
+            hh=window.getComputedStyle(word[i]).height
+            setTimeout(function() {
+                h=window.getComputedStyle(document.querySelector('.PJ_main_box')).height
+                hh=window.getComputedStyle(word[i]).height
+                document.querySelector('.PJ_main_box').style.height=parseInt(h)+parseInt(hh)-parseInt(ch) +"px";
+}, 1500);
+
+        }   
+        else{
+            word[i].classList.remove('animate_more_word')
+            word[i].classList.add('animate_close_word')
+            word[i].style.maxHeight="30vw";
+            more_on[i]=0
+            more[i].textContent="展开全文"
+
+            ch=window.getComputedStyle(word[i]).height
+            setTimeout(function() {
+                h=window.getComputedStyle(document.querySelector('.PJ_main_box')).height
+                hh=window.getComputedStyle(word[i]).height
+                document.querySelector('.PJ_main_box').style.height=parseInt(h)+parseInt(hh)-parseInt(ch) +"px";
+}, 1500);
+        }
+        })
+}
+timer();
+
+
+
+
+    </script>
+
+
+</body>
+
+
+</html>
