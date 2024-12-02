@@ -1,6 +1,6 @@
 # Alanclub
 
-alan的小酒馆建设中...
+Alan的小酒馆建设中....
 
   --基于html+css+js
 
