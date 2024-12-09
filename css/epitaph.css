@@ -1,0 +1,21 @@
+.PE_TV{
+	position: absolute;
+	margin: auto;
+	width: auto;
+	top:5%;
+	height: 95%;
+ }
+
+ .PE_TV_BOX{
+	position: absolute;
+	width: 34%;
+	height: 45%;
+	top: 28%;
+	display: flex; 
+	border-radius: 0.5vw;
+	justify-content:center; 
+	align-items: center; 
+	align-content: center; 
+	overflow: hidden;
+	background-color: black;
+}

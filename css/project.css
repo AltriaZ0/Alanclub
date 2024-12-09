@@ -1,0 +1,129 @@
+.PJ_main_box{
+	padding: 0.3vw 0.3vw;
+}
+
+
+#my_information_box{
+	border-radius: 0.5vw;
+    background-color:rgba(36, 36, 36, 0.5);
+	backdrop-filter: blur(1vw);
+	height: 30vw;
+    margin: 0px 0.1vw;
+	overflow: hidden;
+	padding: 0px 0px ;
+	transition: all 0.3s ease;
+	display:flex;
+	flex-wrap: wrap;
+	align-content:flex-start;
+}
+
+.ico_box{
+	position: absolute;
+	height: 2vw;
+	width: 100%;
+	top: 27.4vw;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ico_box img{
+	width: 1.5vw;
+	height: 1.5vw;
+	padding: 0.3vw 0.3vw;
+	background-color: #5858585b;
+	border-radius: 0.3vw;
+}
+
+.random_box{
+	background-color: #5858585b;
+	border: solid 0.1vw #797979;
+	transition: all 0.1s ease;
+	border-radius: 0.3vw;
+	height: 5vw;
+	width: 90%;
+	left:5%;
+	position: relative;
+	margin-bottom: 1vw;
+}
+
+.random_box:hover{
+	background-color:rgba(88, 88, 88, 0.781) ;
+	transition: all 0.1s ease;
+}
+
+.ico_box img:hover{
+	background-color:rgba(88, 88, 88, 0.781) ;
+	transition: all 0.1s ease;
+}
+
+#my_information_box:hover{
+	box-shadow: 0px 0px 0.5vw 0vw rgba(153, 153, 153, 0.5);
+}
+
+
+#head_page_box{
+	height: 200vw;
+    margin: 0px 0.6vw;
+	transition: all 0.3s ease;
+}
+
+.head_page_little_box{
+	border-radius: 0.5vw;
+    background-color:rgba(36, 36, 36, 0.5);
+	backdrop-filter: blur(1vw);
+	width: 100%;
+	height: auto;
+    margin-bottom: 1.6vw;
+	padding: 0vw 0vw ;
+	transition: all 0.3s ease;
+	display:flex;
+	align-content:space-around;
+}
+
+.head_page_little_box:hover{
+	box-shadow: 0px 0px 0.5vw 0vw rgba(153, 153, 153, 0.5);
+}
+
+.head_page_little_box img{
+	width: 80%;
+	position: relative;
+	left: 10%;
+	height: auto;
+	padding: 0vw 0vw;
+	margin: 1vw 0vw;
+	box-shadow: 0px 0px 0.75vw 0vw rgba(126, 126, 126, 0.733);
+}
+
+
+
+.head_menu{
+	width: 20%; 
+	height: 2.2vw; 
+	border-radius: 0.3vw; 
+	margin: 0.4vw 0.2vw; 
+	background-color: #5858585b;
+	text-align: center;
+	padding: 0 0;
+	transition: all 0.1s ease;
+
+}
+
+.head_menu:hover{
+	background-color: rgba(88, 88, 88, 0.781);
+}
+
+.head_menu h2{
+	top: -0.5vw;
+	position: relative;
+	color: #efefef;
+	font-family:'Segoe UI', Tazma, Geneva, Verdana, sans-serif;
+	font-size: 1vw;
+
+}
+
+.head_divide_box{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(239,239,239,.7)
+}

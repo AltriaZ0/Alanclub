@@ -1,0 +1,110 @@
+
+Page_Main{
+    display: inline;
+}
+
+Page_Inter_Knot{
+   display: none;
+   overflow: hidden;
+}
+
+Page_Project  {
+   display: none;
+}
+
+Page_Photo * {
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+   text-decoration: none;
+   bottom: 0;
+}
+
+Page_Photo  {
+   padding: 0px;
+   margin: 0px; 
+   display: none;
+   overflow: hidden;
+}
+
+Page_EPITAPH{
+   display: none;
+
+}
+
+#backgroundfilter{
+	/* 背景图片	background-image:url('./Headpicture.png'); */
+	background-color: #111111;
+	filter: blur(0.3vw);
+	left: -1%;
+	width: 102%;
+	height: 98%;
+	top:3vw;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -99;
+	position: fixed;
+}
+
+
+.html_header{
+	display: inline-block;
+	padding: 0vw 2vw;
+}
+
+
+.html_header_a{
+	padding: 0.4vw 2vw;
+	font-size: 1.1vw;
+	color: #787878;
+	border-radius: 2vw;
+	transition: all 0.5s ease ;
+	text-decoration: none;
+	font-family: Bold;
+}
+
+.html_header_a_main{
+	padding: 0.4vw 2vw;
+	font-size: 1vw;
+	color: #787878;
+	border-radius: 2vw;
+	transition: all 0.5s ease ;
+	text-decoration: none;
+	font-weight: bold;
+	font-size:1.2vw;
+	background-color: white;
+	transition: all 0.5s ease ;
+ 	color: black;
+	 font-family: Bold;
+}
+
+.html_header_a:hover{
+	font-size:1.1vw;
+	background-color: white;
+	transition: all 0.5s ease ;
+ 	color: black;
+}
+
+
+#main_page_a{
+	font-size:1.1vw;
+	background-color: white;
+ 	color: black;
+	font-weight: bold;
+}
+
+header{
+	background-color: black;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	height: 3vw	;
+	width:100%;
+	right: 0vw;
+	top: 0vw;
+	justify-content:center;
+	padding:0.4vw 0vw;
+	z-index: 1;
+
+}

@@ -1,0 +1,150 @@
+
+.Photo_Box{
+	width: 46vw;
+	height: 33vw;
+	top:-3.5vw;
+	left: 27vw;
+	position: relative;
+	border-radius:1vw;
+}
+
+.photoes{
+	width: 230vw;
+	height: 100%;
+	display: flex;
+	left: 0%;
+	position: relative;
+	transition: .2s;
+	list-style: none;
+}
+
+.photo{
+	border-radius: 1vw;
+	width: 44vw;
+	height: 33vw;
+	background-size: cover;
+	margin-right: 1vw;
+	margin-left: 1vw;
+	box-shadow: 1vw 1.5vw 1vw rgba(0, 0, 0, 0.25);
+}
+
+.photo:nth-child(1){
+	background-image: url("../images/Photo/sun3.jpg");
+}
+.photo:nth-child(2){
+	background-image: url("../images/Photo/red1.jpg");
+}
+.photo:nth-child(3){
+	background-image: url("../images/Photo/sun2.jpg");
+}
+.photo:nth-child(4){
+	background-image: url("../images/Photo/wugong1.jpg");
+}
+.photo:nth-child(5){
+	background-image: url("../images/Photo/yantai1.jpg");
+}
+.photo:nth-child(6){
+	background-image: url("../images/Photo/wugong2.jpg");
+}
+.photo:nth-child(7){
+	background-image: url("../images/Photo/zhuhai1.jpg");
+}
+.photo:nth-child(8){
+	background-image: url("../images/Photo/beijing1.jpg");
+}
+.photo:nth-child(9){
+	background-image: url("../images/Photo/guangzhou1.jpg");
+}
+
+.min{
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 3vw;
+	width:40%;
+	z-index: 99;
+	left: 50%;
+	height: 4vw;
+	transform: translateX(-50%);
+}
+
+.m{
+	width: 3.5vw;
+	height: 3.5vw;
+	border: solid rgba(70, 70, 70, 0.9) 0.1vw;
+	background-color: #fefefe;
+	background-size: cover;
+
+ }
+
+ .m:nth-child(1){
+	background-image: url("../images/Photo/sun3.jpg");
+}
+.m:nth-child(2){
+	background-image: url("../images/Photo/red1.jpg");
+}
+.m:nth-child(3){
+	background-image: url("../images/Photo/sun2.jpg");
+}
+.m:nth-child(4){
+	background-image: url("../images/Photo/wugong1.jpg");
+}
+.m:nth-child(5){
+	background-image: url("../images/Photo/yantai1.jpg");
+}
+.m:nth-child(6){
+	background-image: url("../images/Photo/wugong2.jpg");
+}
+.m:nth-child(7){
+	background-image: url("../images/Photo/zhuhai1.jpg");
+}
+.m:nth-child(8){
+	background-image: url("../images/Photo/beijing1.jpg");
+}
+.m:nth-child(9){
+	background-image: url("../images/Photo/guangzhou1.jpg");
+}
+
+ .photo_change_botton{
+	width: 60%;
+	height: 4vw;
+	left: 20%;
+	top: 3vw;
+	position: absolute;
+	justify-content: space-between;
+	align-items:center;
+	user-select: none;
+	z-index: 1;
+	overflow: hidden;
+ }
+
+ .button_left{
+	top:0vw;
+	height: 3.5vw;
+	position: absolute;
+ }
+
+ .button_right{
+	right: 0;
+	top:0vw;
+	height: 3.5vw;
+	position: absolute;
+	transform: scale(-1);
+ }
+
+ .button_left:hover{
+	opacity: 0;
+ }
+
+ .button_right:hover{
+	opacity: 0;
+ }
+
+ 
+ .photo_foot{
+	position: absolute;
+	width: 100%;
+	bottom: 0vw;
+	height: 10vw;
+	background-color: #111111;
+ }

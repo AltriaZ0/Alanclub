@@ -1,0 +1,103 @@
+/*首页的切入动画*/
+
+@keyframes left_in {
+	0%   {left:-50%;}
+	100% {left:16%;}
+}
+
+@keyframes right_in {
+	0%   {left:85%;}
+	100% {left:63%;}
+}
+
+@keyframes top_in1 {
+	0%   {top:140vw;}
+	100% {top:129vw;}
+}
+
+@keyframes top_in2 {
+	0%   {top:240vw;}
+	100% {top:229vw;}
+}
+
+@keyframes Inter_knot_box {
+	0%   {left: 100%; }
+	100% {left:0%;}
+}
+
+
+  /* 初始化动画效果，这里设置为无动画 */
+  .animated-element {
+	animation: none;
+	transition: background-color 1s;
+  }
+   
+  /* 滚动触发的动画类 */
+  .animate {
+	animation: left_in 0.75s ease;
+	left: 16%;
+  }
+
+    /* 滚动触发的动画类 */
+	.animate2 {
+		animation: right_in 0.75s ease;
+		left: 63%;
+	}
+
+	.animate_Inter_knot_box{
+		animation: Inter_knot_box 0.75s ease;
+		left: 0% ;
+	}
+
+  .animate_showbox1{
+	animation: top_in1 0.75s ease;
+	top: 129vw;
+  }
+
+  .animate_showbox2{
+	animation: top_in2 0.75s ease;
+	top: 229vw;
+  }
+
+  .animate3 {
+	animation: Music_boom 0.5s infinite ease;
+  }
+
+  .animate_more_word{
+	animation: Open_more_word 3s ease;
+  }
+
+  .animate_close_word{
+	animation: Close_more_word 2s ease;
+  }
+  
+
+
+@keyframes Faded {
+	0%   {opacity: 100%; }
+	100% {opacity: 0%;}
+}
+
+@keyframes unFaded {
+	0%   {opacity: 0%; }
+	100% {opacity: 100%;}
+}
+
+
+@keyframes Music_boom {
+	0%   {font-size: 1.2vw; }
+	10%	 {font-size: 1.1vw; }
+	80% {font-size: 1.5vw; }
+	100% {font-size: 1.2vw; }
+}
+
+@keyframes Open_more_word {
+	0% {max-height: 30vw;}
+	100% {max-height: 150vw;}
+}
+
+@keyframes Close_more_word {
+	0% {max-height: 150vw;}
+	100% {max-height: 30vw;}
+}
+
